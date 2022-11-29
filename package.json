@@ -1,0 +1,25 @@
+{
+  "name": "uiapi",
+  "version": "1.0.0",
+  "description": "Basic project",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/*.js",
+    "headless": "testcafe 'chrome:headless' tests/*.js",
+    "emulation": "testcafe 'chrome:emulation:device=iphone X' tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.jalasoft.local/Henry.Benito/testcafe-uiapi-basic.git"
+  },
+  "keywords": [
+    "testcafe",
+    "uitesting",
+    "backendtesting"
+  ],
+  "author": "Henry Benito",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^2.1.0"
+  }
+}
