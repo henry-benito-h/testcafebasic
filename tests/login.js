@@ -1,7 +1,8 @@
 const { Selector } = require("testcafe");
 import LoginPage from "../pages/LoginPage";
 
-fixture `Login suite`.page("./");
+fixture `Login suite`.page("./")
+.page("https://www.saucedemo.com");
 
 test('valid login', async (t)=>{
     LoginPage.login("standard_user","secret_sauce");

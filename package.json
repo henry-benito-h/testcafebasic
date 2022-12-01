@@ -4,9 +4,17 @@
   "description": "Basic project",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/*.js",
-    "headless": "testcafe 'chrome:headless' tests/*.js",
-    "emulation": "testcafe 'chrome:emulation:device=iphone X' tests/*.js"
+    "test": "testcafe chrome tests/firstTest.js",
+    "api": "testcafe chrome tests/API.js",
+    "multiple-browsers": "testcafe chrome,firefox tests/firstTest.js",
+    "all-browsers": "testcafe all tests/firstTest.js",
+    "concurrency": "testcafe -c 3 chrome,firefox tests/firstSelectorTest.js",
+    "live-mode": "testcafe chrome tests/firstTest.js -L",
+    "skip-js-errors": "testcafe all tests/firstTest.js --skip-js-errors",
+    "run-test-by-meta": "testcafe chrome tests/runByMetaAndName.js --test-meta env=production",
+    "run-test-by-name": "testcafe chrome tests/runByMetaAndName.js -t \"name\"",
+    "headless": "testcafe 'firefox:headless' tests/firstTest.js",
+    "emulation": "testcafe \"chrome:emulation:device=iphone X\" tests/firstTest.js"
   },
   "repository": {
     "type": "git",

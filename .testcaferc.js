@@ -4,6 +4,6 @@ module.exports = {
     skipJsErrors: true,
     hostname: os.hostname(),
     // Other settings
-    baseUrl: "https://www.saucedemo.com",
-    concurrency: 2,
+    // baseUrl: "https://www.saucedemo.com",
+    // concurrency: 2,
 }
