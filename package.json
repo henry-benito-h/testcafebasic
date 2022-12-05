@@ -4,17 +4,21 @@
   "description": "Basic project",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/firstTest.js",
-    "api": "testcafe chrome tests/API.js",
-    "multiple-browsers": "testcafe chrome,firefox tests/firstTest.js",
-    "all-browsers": "testcafe all tests/firstTest.js",
-    "concurrency": "testcafe -c 3 chrome,firefox tests/firstSelectorTest.js",
-    "live-mode": "testcafe chrome tests/firstTest.js -L",
-    "skip-js-errors": "testcafe all tests/firstTest.js --skip-js-errors",
-    "run-test-by-meta": "testcafe chrome tests/runByMetaAndName.js --test-meta env=production",
-    "run-test-by-name": "testcafe chrome tests/runByMetaAndName.js -t \"name\"",
-    "headless": "testcafe 'firefox:headless' tests/firstTest.js",
-    "emulation": "testcafe \"chrome:emulation:device=iphone X\" tests/firstTest.js"
+    "test-jenkins": "testcafe chrome test/*.js --test-meta type=acc",
+    "test": "testcafe chrome test/firstTest.js",
+    "api": "testcafe chrome test/API.js",
+    "multiple-browsers": "testcafe chrome,firefox test/firstTest.js",
+    "all-browsers": "testcafe all test/firstTest.js",
+    "concurrency": "testcafe -c 3 chrome,firefox test/firstSelectorTest.js",
+    "live-mode": "testcafe chrome test/firstTest.js -L",
+    "skip-js-errors": "testcafe all test/firstTest.js --skip-js-errors",
+    "run-test-by-meta": "testcafe chrome test/runByMetaAndName.js --test-meta env=production",
+    "run-test-by-name": "testcafe chrome test/runByMetaAndName.js -t \"name\"",
+    "headless": "testcafe 'firefox:headless' test/firstTest.js",
+    "emulation": "testcafe \"chrome:emulation:device=iphone X\" test/firstTest.js",
+    "debug-fail": "testcafe chrome test/debugFail.js --debug-on-fail",
+    "screen-fail": "testcafe chrome test/screenshotFail.js -s takeOnFails=true",
+    "video": "testcafe firefox test/video.js --video artifacts/videos --video-options failedOnly=true"
   },
   "repository": {
     "type": "git",
@@ -28,6 +32,7 @@
   "author": "Henry Benito",
   "license": "ISC",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "testcafe": "^2.1.0"
   }
 }

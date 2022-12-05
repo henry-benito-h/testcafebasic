@@ -13,7 +13,9 @@ fixture("First Fixture")
    .setPageLoadTimeout(0);
 });
 
-test('Selector', async (t) => {
+test
+.meta("type", "acc")
+('Selector', async (t) => {
    await t
       .typeText(developerName, "TAU")
       .click(osOption)

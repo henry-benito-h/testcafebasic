@@ -25,7 +25,8 @@ test('No skipped', async (t) => {
       .click(submitButton);
 });
 
-test.only('Only', async (t) => {
+// test.only('Only', async (t) => {
+test('Only', async (t) => {
    await t
    .expect(developerName.value).eql('', "input is empty")
    .typeText(developerName, "TAU")

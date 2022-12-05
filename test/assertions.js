@@ -7,7 +7,9 @@ const submitButton = Selector("#submit-button");
 fixture("First Fixture")
 .page("https://devexpress.github.io/testcafe/example");
 
-test('Selector', async (t) => {
+test
+.meta("type", "acc")
+('Selector', async (t) => {
    await t
    .expect(developerName.value).eql('', "input is empty")
    .typeText(developerName, "TAU")

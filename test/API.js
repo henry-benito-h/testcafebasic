@@ -1,5 +1,7 @@
 fixture `API request`;
-test("Get request", async (t) =>{
+test
+.meta("type", "acc")
+("Get request", async (t) =>{
     const results = await t.request({
         url: `https://jsonplaceholder.typicode.com/todos/1`,
         method: "GET",

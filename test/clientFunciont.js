@@ -4,7 +4,9 @@ const getPageURL = ClientFunction(() => window.location.href);
 const getHostname = ClientFunction(() => window.location.hostname);
 fixture("First Fixture").page("https://devexpress.github.io/testcafe/example");
 
-test('client function', async (t) => {
+test
+.meta("type", "acc")
+('client function', async (t) => {
    await t
       .typeText("#developer-name", "TAU")
       .click("#macos")
