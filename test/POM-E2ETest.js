@@ -53,7 +53,6 @@ test
     .expect(getURL()).contains('checkout');
     await Checkoutpage.selectCountry('Germany');
     await t
-        .takeScreenshot()
         .typeText(Checkoutpage.cityTxt,'Berlin')
         .typeText(Checkoutpage.addressTxt,'108 ddd test')
         .typeText(Checkoutpage.zipTxt,'123456')

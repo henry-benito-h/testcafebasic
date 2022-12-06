@@ -1,0 +1,20 @@
+[
+    {
+        "firstname": "Diana",
+        "lastname": "Benito",
+        "birthday": "19",
+        "birthmonth": "December",
+        "birthyear": "2017",
+        "email": "itati_benito",
+        "password": "19122017"
+    },
+    {
+        "firstname": "Santiago",
+        "lastname": "Benito",
+        "birthday": "15",
+        "birthmonth": "September",
+        "birthyear": "2020",
+        "email": "santi_benito",
+        "password": "15092020"
+    }
+]
