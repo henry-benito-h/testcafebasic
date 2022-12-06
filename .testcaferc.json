@@ -1,4 +1,7 @@
 {
     "skipJsErrors": true,
-    "concurrency": 2
+    "concurrency": 2,
+    "screenshotPath": "./screenshots",
+    "screenshotPathPattern": "${DATE}_${TIME}/${FIXTURE}.png",
+    "takeOnFails": true
 }
