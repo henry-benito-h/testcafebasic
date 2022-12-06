@@ -1,0 +1,13 @@
+{
+    "skipJsErrors": true,
+    "reporter": [
+        {
+            "name": "spec"
+        },
+        {
+            "name": "json",
+            "output": "reports/report.json"
+        }
+    ],
+    "concurrency": 2
+}

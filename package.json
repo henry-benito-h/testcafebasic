@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-jenkins": "testcafe chrome test/*.js --test-meta type=acc",
+    "test-jenkins-pom": "testcafe chrome advanced/nopcomerce/tests/*.js --test-meta type=acc",
     "test": "testcafe chrome test/firstTest.js",
     "api": "testcafe chrome test/API.js",
     "multiple-browsers": "testcafe chrome,firefox test/firstTest.js",

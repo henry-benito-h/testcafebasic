@@ -5,4 +5,8 @@ node_modules/
 screenshots/
 artifacts/videos
 
+# reports
+reports/ 
+
+#lock json
 package-lock.json
