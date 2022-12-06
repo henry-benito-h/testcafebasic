@@ -4,8 +4,7 @@
   "description": "Basic project",
   "main": "index.js",
   "scripts": {
-    "test-jenkins": "testcafe chrome test/*.js --test-meta type=acc",
-    "test-jenkins-pom": "testcafe chrome advanced/nopcomerce/tests/*.js --test-meta type=acc",
+    "test-jenkins": "testcafe chrome test/*.js --test-meta type=acc --reporter html:reports/index.html",
     "test": "testcafe chrome test/firstTest.js",
     "api": "testcafe chrome test/API.js",
     "multiple-browsers": "testcafe chrome,firefox test/firstTest.js",
@@ -34,6 +33,7 @@
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "testcafe": "^2.1.0"
+    "testcafe": "^2.1.0",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
